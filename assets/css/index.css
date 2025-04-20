@@ -9,6 +9,7 @@ body{
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
 }
+
 .header{
     background-color: var(--color-primary);
     display: flex;
@@ -27,4 +28,35 @@ body{
     margin: var(--spacing-xs);
     text-decoration: none;
     font-family: var(--font-family-heading);
+    font-size: var(--font-size-md);
+    color: var(--text-primary);
+}
+
+.header__nav__item a:hover{
+    background-color: var(--color-primary-dark);
+    color: var(--text-on-dark);
+    border: 1px solid black;
+}
+
+.div{
+    background-color: var(--color-primary-light);
+    width: 100%;
+    height: 40px;
+}
+
+.div__navbar{
+    display: flex;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.div__navbar__item a{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.div__navbar__item a:hover{
+    color: var(--text-on-dark);
 }
