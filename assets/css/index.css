@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.header{
+    background-color: var(--color-primary);
+    display: flex;
+}
+
+.header__nav{
+    padding: var(--spacing-md);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    width: 96%;
+}
+
+.header__nav__item a{
+    margin: var(--spacing-xs);
+    text-decoration: none;
+    font-family: var(--font-family-heading);
+}

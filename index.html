@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--
+        el archivo style.css se debe de llamar en todos los otros archivos siempre
+        este contiene la informacion de los colores principales
+    -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Vulcan</title>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <!--logo-->
+        <a href="index.html"><img src="" alt="logo"></a>
+        <!--Barra navegacion solo para el login y registrate-->
+        <nav class="header__nav">
+            <li class="header__nav__item"><a href="">Login</a></li>
+            <li class="header__nav__item"><a href="">Regístrate</a></li>
+        </nav>
     </header>
     <main>
 
@@ -16,7 +28,7 @@
 
     </aside>
     <footer>
-        
+        &copy;
     </footer>
 </body>
 </html>
