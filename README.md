@@ -18,7 +18,15 @@ Tipo de letra: Arial
 
 Paleta de Colores:
 
-:root { --color-primary: #F2637E; --color-secondary: #41E1F2; --color-accent: #F2CB07; --color-dark: #D9593D ; --color-light: #808C20 /* ... más variables ... */ }
+:root { 
+
+--color-primary: #F2637E; 
+--color-secondary: #41E1F2; 
+--color-accent: #F2CB07; 
+--color-dark: #D9593D ; 
+--color-light: #808C20
+
+ /* ... más variables ... */ }
 
 Link Adobe Color: https://color.adobe.com/es/trends/Game-design
 
