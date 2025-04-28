@@ -1,70 +1,70 @@
 /* ===== VARIABLES ===== */
 :root {
-    /* Paleta de colores inspirada en Adobe Color */
-    --color-primary: #F2637E;       /*Rosa fuerte*/
-    --color-secondary: #41E1F2;     /*Cian brillante*/
-    --color-accent: #F2CB07;        /*Amarillo vibrante*/
-    --color-dark: #D9593D;          /*Rojo quemado*/
-    --color-light: #808C20;         /*Verde oliva amarillento*/
-    
-    /* Variaciones de colores */
-    --color-primary-light: #F89AAE;
-    --color-primary-dark: #C84E67;
-    --color-secondary-light: #8EF0F8;
-    --color-secondary-dark: #2EB4C1;
-    --color-accent-light: #F8DD5C;
-    --color-accent-dark: #C4A206;
-    --color-dark-light: #E98571;
-    --color-light-dark: #5A6118;
-    
-    /* 🖋️ Colores de texto */
-    --text-primary:     #1E1E1E;   /* Texto principal sobre fondo claro */
-    --text-secondary:   #666666;   /* Texto secundario, descripciones */
-    --text-muted:       #999999;   /* Texto de menor jerarquía */
-    --text-light:       #FFFFFF;   /* Texto sobre fondos oscuros */
-    --text-on-accent:   #2B2B2B;   /* Texto sobre fondos muy claros (amarillo/verde) */
-    --text-on-dark:     #FFFFFF;   /* Texto sobre botones u objetos oscuros */
-    --text-highlight:   #F2637E;   /* Para resaltar info o titulares */
-    --text-link:        #41E1F2;   /* Enlaces o acciones */
-    
-    /* Espaciado */
-    --spacing-xs: 0.25rem;   /* 4px */
-    --spacing-sm: 0.5rem;    /* 8px */
-    --spacing-md: 1rem;      /* 16px */
-    --spacing-lg: 1.5rem;    /* 24px */
-    --spacing-xl: 2rem;      /* 32px */
-    --spacing-xxl: 3rem;     /* 48px */
-    
-    /* Fuentes */
-    --font-family-base: 'Arial', 'Helvetica', sans-serif;
-    --font-family-heading: 'Arial', 'Helvetica', sans-serif;
-    
-    /* Tamaños de fuente */
-    --font-size-xs: 0.75rem;  /* 12px */
-    --font-size-sm: 0.875rem; /* 14px */
-    --font-size-md: 1rem;     /* 16px */
-    --font-size-lg: 1.25rem;  /* 20px */
-    --font-size-xl: 1.5rem;   /* 24px */
-    --font-size-xxl: 2rem;    /* 32px */
-    --font-size-xxxl: 2.5rem; /* 40px */
-    
-    /* Bordes y radios */
-    --border-radius-sm: 4px;
-    --border-radius-md: 8px;
-    --border-radius-lg: 16px;
-    --border-width: 1px;
-    
-    /* Sombras */
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-    
-    /* Transiciones */
-    --transition-fast: 0.2s ease;
-    --transition-normal: 0.3s ease;
-    --transition-slow: 0.5s ease;
-    
-    /* Contenedores */
-    --container-max-width: 1200px;
-    --container-padding: var(--spacing-md);
+  /* Paleta de colores inspirada en Adobe Color */
+  --color-primary: #f2637e; /*Rosa fuerte*/
+  --color-secondary: #41e1f2; /*Cian brillante*/
+  --color-accent: #f2cb07; /*Amarillo vibrante*/
+  --color-dark: #d9593d; /*Rojo quemado*/
+  --color-light: #808c20; /*Verde oliva amarillento*/
+
+  /* Variaciones de colores */
+  --color-primary-light: #f89aae;
+  --color-primary-dark: #c84e67;
+  --color-secondary-light: #8ef0f8;
+  --color-secondary-dark: #2eb4c1;
+  --color-accent-light: #f8dd5c;
+  --color-accent-dark: #c4a206;
+  --color-dark-light: #e98571;
+  --color-light-dark: #5a6118;
+
+  /* 🖋️ Colores de texto */
+  --text-primary: #1e1e1e; /* Texto principal sobre fondo claro */
+  --text-secondary: #666666; /* Texto secundario, descripciones */
+  --text-muted: #999999; /* Texto de menor jerarquía */
+  --text-light: #ffffff; /* Texto sobre fondos oscuros */
+  --text-on-accent: #2b2b2b; /* Texto sobre fondos muy claros (amarillo/verde) */
+  --text-on-dark: #ffffff; /* Texto sobre botones u objetos oscuros */
+  --text-highlight: #f2637e; /* Para resaltar info o titulares */
+  --text-link: #41e1f2; /* Enlaces o acciones */
+
+  /* Espaciado */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 3rem; /* 48px */
+
+  /* Fuentes */
+  --font-family-base: "Arial", "Helvetica", sans-serif;
+  --font-family-heading: "Arial", "Helvetica", sans-serif;
+
+  /* Tamaños de fuente */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
+  --font-size-xxl: 2rem; /* 32px */
+  --font-size-xxxl: 2.5rem; /* 40px */
+
+  /* Bordes y radios */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+  --border-width: 1px;
+
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Contenedores */
+  --container-max-width: 1200px;
+  --container-padding: var(--spacing-md);
 }
