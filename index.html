@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
         el archivo style.css se debe de llamar en todos los otros archivos siempre
         este contiene la informacion de los colores principales
     -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/index.css">
-  <title>Vulcan</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Vulcano</title>
 </head>
-
 <body>
-  <header class="header">
-    <!--logo-->
-    <a href="index.html"><img class="header__logo" src="assets/image/logo.png" alt="logo"></a>
-    <!--Barra navegacion solo para el login y registrate-->
-    <nav class="header__nav">
-      <li class="header__nav__item"><a href="">Login</a></li>
-      <li class="header__nav__item"><a href="">Regístrate</a></li>
-    </nav>
-  </header>
-  <div class="div">
-    <nav class="div__navbar">
-      <li class="div__navbar__item"><a href="./pages/Acerca de/acercade.html">Acerca de</a></li>
-      <li class="div__navbar__item"><a href="./pages/Contactenos/contactenos.html">Contactenos</a></li>
-      <li class="div__navbar__item"><a href="./pages/Otros 1/otros1.html">Otros 1</a></li>
-      <li class="div__navbar__item"><a href="./pages/Otros 2/otros2.html">Otros 2</a></li>
-    </nav>
-  </div>
-  <main class="main">
-    <!-- ---------------Inicia Slider------------------------------------ -->.
-    <div class="slider-frame">
-      <ul>
-        <li><img src="assets/image/vULCAN 1.jpeg" alt=""></li>
-        <li><img src="assets/image/vULCAN 2.jpeg" alt=""></li>
-        <li><img src="assets/image/Vulcan 3.jpeg" alt=""></li>
-        <li><img src="assets/image/Vulcan 4.jpeg" alt=""></li>
-      </ul>
-    </div>
-    <!-- ---------------Finaliza Slider------------------------------------ -->
+    <header class="header">
+        <!--logo-->
+        <a href="index.html"><img class="header__logo" src="assets/image/vulcano.png" alt="logo"></a>
+        <nav class="div__navbar">
+            <li class="div__navbar__item"><a href="pages/acerca.html">Acerca de</a></li>
+            <li class="div__navbar__item"><a href="pages/contactenos.html">Contactenos</a></li>
+            <li class="div__navbar__item"><a href="pages/nosotros.html">Nostros</a></li>
+        </nav>
+        <!--Barra navegacion solo para el login y registrate-->
+        <nav class="header__nav">
+            <li class="header__nav__item login"><a href="">Login</a></li>
+            <li class="header__nav__item"><a href="">Regístrate</a></li>
+        </nav>  
+    </header>
+    <main>
+        <!-- ---------------Inicia Slider------------------------------------ -->
+        <div class="slider-frame">
+            <ul>
+                <li><img src="assets/image/Diseño sin título.png" alt="imagen1"></li>
+                <li><img src="assets/image/Diseño sin título.jpg" alt="imagen2"></li>
+                <li><img src="assets/image/Vulcan 3.jpeg" alt="imagen3"></li>
+                <li><img src="assets/image/Vulcan 4.jpeg" alt="imagen4"></li>
+            </ul>
+        </div>
+        <!-- ---------------Finaliza Slider------------------------------------ -->
+        <!-- ---------------Seccion de Contenido------------------------------------ -->
+        <!-- Sección de Contenido Dos Columnas -->
+        <section class="content-section content-section--two-columns">
+            <div class="content-section__container">
+                <div class="content-section__header">
+                    <h2 class="content-section__title">Nuestro Enfoque</h2>
+                    <p class="content-section__subtitle">Potenciar el aprendizaje y el conocimiento mediante contenido
+                        interactivo </p>
+                </div>
+                <div class="content-section__body">
+                    <div class="content-section__column">
+                        <h3>Estrategia</h3>
+                        <p class="content-section__text">Aprendizaje adaptativo al usuario segun su nivel de ritmo y
+                            aprendizaje en cada materia, complementadno su aprendizaje con interactividad y evaluaciones
+                            dinamicas que logran mantener el compromiso de estudio. </p>
+                    </div>
 
-  </main>
-  <aside>
+                    <div class="content-section__column">
+                        <h3>Implementación</h3>
+                        <p class="content-section__text">La app analiza el progreso del usuario y ajusta el contenido
+                            según
+                            su nivel mediante algoritmos adaptativos. Usamos una interfaz flexible que garantice una
+                            experiencia personalizada y envolvente al estudiante.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  </aside>
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__info">
-        <h3 class="footer__logo">Diviértete y Aprende</h3>
-        <p class="footer__text">Una plantilla web moderna y adaptable.</p>
-      </div>
+        <!-- Card Grid Con Ícono -->
+        <section class="content-section content-section--two-columns">
+            <div class="content-section__container">
+                <div class="content-section__header">
+                    <h2 class="content-section__title">Juegos principales</h2>
+                </div>
 
-      <div class="footer__links">
-        <h4 class="footer__heading">Enlaces Rápidos</h4>
-        <ul class="footer__nav">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/about.html">Acerca de</a></li>
-          <li><a href="pages/services.html">Servicios</a></li>
-          <li><a href="pages/contact.html">Contacto</a></li>
-        </ul>
-      </div>
+                <div class="card-grid">
+                    <article class="card card--icon">
+                        <div><img class="card__icon" src="assets/Iconos/agile.png" alt=""></div>
+                        <div class="card__content">
+                            <h3 class="card__title">Metodologia Agiles</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                in
+                                dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="card__button">Leer más</a>
+                        </div>
+                    </article>
 
-      <div class="footer__contact">
-        <h4 class="footer__heading">Contacto</h4>
-        <address>
-          <p>Email: vulcano@miproyecto.com</p>
-          <p>Teléfono: (304) 456-7890</p>
-        </address>
-      </div>
-    </div>
+                    <article class="card card--icon">
+                        <div><img class="card__icon" src="assets/Iconos/Programación.png" alt=""></div>
+                        <div class="card__content">
+                            <h3 class="card__title">Desarollo de Web</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                in
+                                dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="card__button">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="card card--icon">
+                        <div><img class="card__icon" src="assets/Iconos/Logica.png" alt=""></div>
+                        <div class="card__content">
+                            <h3 class="card__title">Logica de Programación</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                in
+                                dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="card__button">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="card card--icon">
+                        <div><img class="card__icon" src="assets/Iconos/Java.png" alt=""></div>
+                        <div class="card__content">
+                            <h3 class="card__title">Java</h3>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                in
+                                dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                            <a href="#" class="card__button">Leer más</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer--grid">
+        <div class="footer__container">
+            <div class="footer__info">
+                <h2 class="footer__logo">Vulcano</h2>
+                <p class="footer__text">Ofrecemos soluciones digitales innovadoras para ayudar a tu negocio a crecer
+                    y destacar en el mercado actual.</p>
+            </div>
 
-    <div class="footer__bottom" class="footer">
-      <p>Copyright &copy; Vulcano 2025 Tu Sitio Web </p>
-    </div>
-  </footer>
+            <div class="footer__links">
+                <h3 class="footer__heading">Enlaces rápidos</h3>
+                <ul class="footer__nav">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="pages/acerca.html">Acerca de</a></li>
+                    <li><a href="pages/contactenos.html">Contactenos</a></li>
+                    <li><a href="pages/nosotros.html">Nostros</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__heading">Contacto</h3>
+                <address>
+                    <p>Calle Principal 123</p>
+                    <p>Medellin, Colombia</p>
+                    <p>Email: info@misitio.com</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p>&copy; 2025 Vulcano. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
