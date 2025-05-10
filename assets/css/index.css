@@ -173,6 +173,7 @@
 /* Card Grid Layout */
 .card-grid {
     display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: var(--spacing-lg);
 }
