@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-        el archivo style.css se debe de llamar en todos los otros archivos siempre
-        este contiene la informacion de los colores principales
-    -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Vulcano</title>
 </head>
+
 <body>
     <header class="header">
         <!--logo-->
+<<<<<<< HEAD
         <a href="index.html"><img class="header__logo" src="assets/image/vulcano.png" alt="logo"></a>
         <nav class="div__navbar">
             <li class="div__navbar__item"><a href="pages/acerca.html">Acerca de</a></li>
@@ -26,6 +25,22 @@
             <li class="header__nav__item login"><a href="">Login</a></li>
             <li class="header__nav__item"><a href="">Regístrate</a></li>
         </nav>  
+=======
+        <div class="header__container__logo">
+            <a href="index.html"><img class="header__logo" src="assets/image/vulcano.png" alt="logo"></a>
+        </div>
+        <div class="header__navbar">
+            <nav class="header__navbar__nav">
+                <ul>
+                    <li class="header__navbar__nav_item"><a href="./pages/acerca.html">Acerca de</a></li>
+                    <li class="header__navbar__nav_item"><a href="./pages/contactenos.html">Contáctenos</a></li>
+                    <li class="header__navbar__nav_item"><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="header__navbar__nav_item"><a href="">Regístrate</a></li>
+                    <li class="header__navbar__nav_item login"><a href="">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+>>>>>>> 6140edc2349751f849c6fa4ee2735e7115ce20c9
     </header>
     <main>
         <!-- ---------------Inicia Slider------------------------------------ -->
@@ -38,8 +53,7 @@
             </ul>
         </div>
         <!-- ---------------Finaliza Slider------------------------------------ -->
-        <!-- ---------------Seccion de Contenido------------------------------------ -->
-        <!-- Sección de Contenido Dos Columnas -->
+          <!-- Sección de Contenido Dos Columnas -->
         <section class="content-section content-section--two-columns">
             <div class="content-section__container">
                 <div class="content-section__header">
@@ -65,8 +79,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Card Grid Con Ícono -->
+         <!-- Card Grid Con Ícono -->
         <section class="content-section content-section--two-columns">
             <div class="content-section__container">
                 <div class="content-section__header">
@@ -111,7 +124,6 @@
             </div>
         </section>
     </main>
-
     <!-- Footer -->
     <footer class="footer footer--grid">
         <div class="footer__container">
@@ -125,9 +137,9 @@
                 <h3 class="footer__heading">Enlaces rápidos</h3>
                 <ul class="footer__nav">
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="pages/acerca.html">Acerca de</a></li>
-                    <li><a href="pages/contactenos.html">Contáctenos</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/acerca.html">Acerca de</a></li>
+                    <li><a href="./pages/contactenos.html">Contáctenos</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 </ul>
             </div>
 
@@ -147,4 +159,5 @@
         </div>
     </footer>
 </body>
+
 </html>
