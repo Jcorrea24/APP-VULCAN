@@ -11,6 +11,7 @@
     --color-light: #ffffff;
     /*Verde oliva amarillento*/
 
+
     /* Variaciones de colores */
     --color-primary-light: #F89AAE;
     --color-primary-dark: #C84E67;
@@ -148,7 +149,7 @@ header {
 
 .header__navbar__nav_item a:hover {
     padding: 10px;
-    border: 1px, solid black;
+    border: 1px, solid rgb(241, 233, 233);
     border-radius: 10px;
     background-color: rgb(133, 79, 116);
 
