@@ -1,0 +1,121 @@
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bloque: registration-form */
+.registration-form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Elemento: registration-form__title */
+.registration-form__title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+/* Elemento: registration-form__form (no necesita estilos específicos aquí, pero es parte de la estructura) */
+
+/* Elemento: registration-form__field-group */
+.registration-form__field-group {
+    margin-bottom: 20px;
+}
+
+/* Elemento: registration-form__label */
+.registration-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--dark-gray);
+    font-size: 0.95em;
+}
+
+/* Elemento: registration-form__required-indicator */
+.registration-form__required-indicator {
+    color: var(--error-color);
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* Elemento: registration-form__input */
+.registration-form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box; /* Para que el padding no afecte el width */
+    font-size: 1em;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.registration-form__input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Modificador: registration-form__input--invalid */
+.registration-form__input--invalid {
+    border-color: var(--error-color);
+}
+.registration-form__input--invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+/* Modificador: registration-form__input--valid (opcional para feedback positivo) */
+.registration-form__input--valid {
+    border-color: var(--success-color);
+}
+.registration-form__input--valid:focus {
+     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+
+/* Elemento: registration-form__error-message */
+.registration-form__error-message {
+    color: var(--error-color);
+    font-size: 0.85em;
+    margin-top: 5px;
+    min-height: 1.2em; /* Para evitar saltos de layout */
+    display: none; /* Oculto por defecto */
+}
+
+/* Modificador: registration-form__error-message--visible */
+.registration-form__error-message--visible {
+    display: block;
+}
+
+/* Elemento: registration-form__submit-button */
+.registration-form__submit-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.registration-form__submit-button:hover {
+    background-color: #0056b3; /* Un azul un poco más oscuro */
+}
+
+.registration-form__submit-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

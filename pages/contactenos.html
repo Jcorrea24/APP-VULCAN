@@ -1,83 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/contactenos.css" />
+    <title>Contactenos</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/contactenos.css">
-    <title>Contactrenos</title>
-</head>
-
-<body>
-    <header class="header">
-        <!--logo-->
-<<<<<<< HEAD
-        <a href="../index.html"><img class="header__logo" src="../assets/image/vulcano.png" alt="logo"></a>
-        <nav class="div__navbar">
-            <li class="div__navbar__item"><a href="acerca.html">Acerca de</a></li>
-            <li class="div__navbar__item"><a href="nosotros.html">Nosotros</a></li>
-            <li class="div__navbar__item"><a href="multimedia.html">Multimedia</a></li>
+  <body>
+      <!--logo-->
+      <div class="header__container__logo">
+        <a href="../index.html"
+          ><img
+            class="header__logo"
+            src="../assets/image/vulcano.png"
+            alt="logo"
+        /></a>
+      </div>
+      <div class="header__navbar">
+        <nav class="header__navbar__nav">
+          <ul>
+            <li class="header__navbar__nav_item">
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="./acerca.html">Acerca de</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="./multimedia.html">Multimedia</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="./nosotros.html">Nosotros</a>
+            </li>
+          </ul>
         </nav>
-        <!--Barra navegacion solo para el login y registrate-->
-        <nav class="header__nav">
-            <li class="header__nav__item login"><a href="">Login</a></li>
-            <li class="header__nav__item"><a href="">Regístrate</a></li>
-        </nav>  
-=======
-        <div class="header__container__logo">
-            <a href="../index.html"><img class="header__logo" src="../assets/image/vulcano.png" alt="logo"></a>
-        </div>
-        <div class="header__navbar">
-            <nav class="header__navbar__nav">
-                <ul>
-                    <li class="header__navbar__nav_item"><a href="./contactenos.html">Acerca de</a></li>
-                    <li class="header__navbar__nav_item"><a href="./contactenos.html">Contáctenos</a></li>
-                    <li class="header__navbar__nav_item"><a href="./nosotros.html">Nosotros</a></li>
-                    <li class="header__navbar__nav_item"><a href="">Regístrate</a></li>
-                    <li class="header__navbar__nav_item login"><a href="">Login</a></li>
-                </ul>
-            </nav>
-        </div>
->>>>>>> 6140edc2349751f849c6fa4ee2735e7115ce20c9
+      </div>
     </header>
-    <main>
+    <main class="main-content">
+     <div class="container">
+>>>>>>> e3c6b2807bfad69205a389d4e2e83089b5184f68
+            <section class="container__feedback">
+                <h1>Tu opinión es importante</h1>
+                <p class="container__subtitle">Ayúdanos a mejorar compartiendo tu experiencia</p>
+                <form class="feedback-form" action="">
+                    <div class="form-group">
+                        <label for="privacyOption">Preferencia de privacidad:</label>
+                        <select id="privacyOption" name="privacyOption" required>
+                            <option value="anonymous">Mantener anónimo</option>
+                            <option value="public">Mostrar mi nombre</option>
+                        </select>
+                    </div>
 
+                    <div class="form-group" id="nameGroup">
+                        <label for="userName">Nombre (opcional):</label>
+                        <input type="text" id="userName" name="userName" placeholder="Tu nombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rating">Calificación general:</label>
+                        <div class="star-rating">
+                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackText">Tu comentario:</label>
+                        <textarea id="feedbackText" name="feedbackText" rows="5"
+                            placeholder="Comparte tu experiencia con nosotros..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                            <span class="checkmark"></span>
+                            Acepto que mi comentario sea publicado en la plataforma
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar comentario</button>
+                </form>
+
+                <div class="progress-info">
+                    <p>Has completado <span class="completed-modules">4</span> de <span class="total-modules">5</span>
+                        módulos</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+<<<<<<< HEAD
+=======
+
+        <!-- Lista de comentarios existentes -->
+        <div class="comments-list">
+          <h2 class="comments-list__title">Comentarios Recientes</h2>
+
+          <article class="comment-item">
+            <header class="comment-item__header">
+              <img
+                src="https://via.placeholder.com/40/007bff/ffffff?text=AP"
+                alt="Avatar de Ana Pérez"
+                class="comment-item__avatar"
+              />
+              <h3 class="comment-item__author">Ana Pérez</h3>
+              <time
+                datetime="2024-03-10T10:30:00"
+                class="comment-item__timestamp"
+                >hace 2 horas</time
+              >
+            </header>
+            <p class="comment-item__text">
+              ¡La plataforma es increíble! He aprendido muchísimo con los
+              módulos de desarrollo web. La interfaz es muy intuitiva y el
+              contenido de alta calidad.
+            </p>
+          </article>
+
+          <article class="comment-item comment-item--anonymous">
+            <header class="comment-item__header">
+              <img
+                src="https://via.placeholder.com/40/6c757d/ffffff?text=UA"
+                alt="Avatar de Usuario Anónimo"
+                class="comment-item__avatar"
+              />
+              <h3 class="comment-item__author">Usuario Anónimo</h3>
+              <time
+                datetime="2024-03-10T08:15:00"
+                class="comment-item__timestamp"
+                >hace 5 horas</time
+              >
+            </header>
+            <p class="comment-item__text">
+              Me gustaría que hubiera más ejemplos prácticos en el módulo de
+              JavaScript avanzado. Por lo demás, todo genial. ¡Gracias!
+            </p>
+          </article>
+
+          <article class="comment-item">
+            <header class="comment-item__header">
+              <img
+                src="https://via.placeholder.com/40/28a745/ffffff?text=LC"
+                alt="Avatar de Luis Castro"
+                class="comment-item__avatar"
+              />
+              <h3 class="comment-item__author">Luis Castro</h3>
+              <time
+                datetime="2024-03-09T18:00:00"
+                class="comment-item__timestamp"
+                >ayer</time
+              >
+            </header>
+            <p class="comment-item__text">
+              Completé todos los módulos de diseño UX y me siento mucho más
+              preparado. El sistema de progreso es muy motivador.
+            </p>
+          </article>
+
+          <p class="comments-list__empty-message" style="display: none">
+            Aún no hay comentarios. ¡Sé el primero en compartir tu experiencia!
+          </p>
+        </div>
+      </section>
+>>>>>>> e3c6b2807bfad69205a389d4e2e83089b5184f68
     </main>
     <!-- Footer -->
     <footer class="footer footer--grid">
-        <div class="footer__container">
-            <div class="footer__info">
-                <h2 class="footer__logo">Vulcano</h2>
-                <p class="footer__text">Ofrecemos soluciones digitales innovadoras para ayudar a tu negocio a crecer
-                    y destacar en el mercado actual.</p>
-            </div>
-
-            <div class="footer__links">
-                <h3 class="footer__heading">Enlaces rápidos</h3>
-                <ul class="footer__nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="pages/acerca.html">Acerca de</a></li>
-                    <li><a href="pages/contactenos.html">Contáctenos</a></li>
-                    <li><a href="pages/nosotros.html">Nosotros</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__contact">
-                <h3 class="footer__heading">Contacto</h3>
-                <address>
-                    <p>Calle Principal 123</p>
-                    <p>Medellin, Colombia</p>
-                    <p>Email: info@misitio.com</p>
-                    <p>Teléfono: (123) 456-7890</p>
-                </address>
-            </div>
+      <div class="footer__container">
+        <div class="footer__info">
+          <h2 class="footer__logo">Vulcano</h2>
+          <p class="footer__text">
+            Ofrecemos soluciones digitales innovadoras para ayudar a tu negocio
+            a crecer y destacar en el mercado actual.
+          </p>
         </div>
 
-        <div class="footer__bottom">
-            <p>&copy; 2025 Vulcano. Todos los derechos reservados.</p>
+        <div class="footer__links">
+          <h3 class="footer__heading">Enlaces rápidos</h3>
+          <ul class="footer__nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./acerca.html">Acerca de</a></li>
+            <li><a href="./contactenos.html">Contáctenos</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+          </ul>
         </div>
+
+        <div class="footer__contact">
+          <h3 class="footer__heading">Contacto</h3>
+          <address>
+            <p>Calle Principal 123</p>
+            <p>Medellin, Colombia</p>
+            <p>Email: info@misitio.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Vulcano. Todos los derechos reservados.</p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

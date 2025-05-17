@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/registro.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Registrate</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!--logo-->
+      <div class="header__container__logo">
+        <a href="../index.html"
+          ><img class="header__logo" src="../assets/image/vulcano.png" alt="logo"
+        /></a>
+      </div>
+      <div class="header__navbar">
+        <nav class="header__navbar__nav">
+          <ul>
+            <li class="header__navbar__nav_item">
+              <a href="../pages/acerca.html">Acerca de</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="../pages/contactenos.html">Contáctenos</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="../pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="header__navbar__nav_item">
+              <a href="pages/multimedia.html">Multimedia</a>
+            </li>
+            <li class="header__navbar__nav_item login"><a href="">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="registration-form">
+        <h1 class="registration-form__title">Crear Perfil de Usuario</h1>
+        <form id="userRegistrationForm" class="registration-form__form">
+          <div class="registration-form__field-group">
+            <label for="fullName" class="registration-form__label">
+              Nombre Completo
+              <span class="registration-form__required-indicator">*</span>
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="registration-form__input"
+              placeholder="Ej: Ana Pérez García"
+            />
+            <p class="registration-form__error-message" id="fullNameError"></p>
+          </div>
+
+          <div class="registration-form__field-group">
+            <label for="email" class="registration-form__label">
+              Correo Electrónico
+              <span class="registration-form__required-indicator">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="registration-form__input"
+              placeholder="Ej: tu.correo@dominio.com"
+            />
+            <p class="registration-form__error-message" id="emailError"></p>
+          </div>
+
+          <div class="registration-form__field-group">
+            <label for="password" class="registration-form__label">
+              Contraseña
+              <span class="registration-form__required-indicator">*</span>
+            </label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="registration-form__input"
+              placeholder="Mín. 8 caracteres, 1 Mayús, 1 Minús, 1 Núm"
+            />
+            <p class="registration-form__error-message" id="passwordError"></p>
+          </div>
+
+          <div class="registration-form__field-group">
+            <label for="confirmPassword" class="registration-form__label">
+              Confirmar Contraseña
+              <span class="registration-form__required-indicator">*</span>
+            </label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="registration-form__input"
+              placeholder="Repite tu contraseña"
+            />
+            <p
+              class="registration-form__error-message"
+              id="confirmPasswordError"
+            ></p>
+          </div>
+
+          <button type="submit" class="registration-form__submit-button">
+            Registrarse
+          </button>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer footer--grid">
+      <div class="footer__container">
+        <div class="footer__info">
+          <h2 class="footer__logo">Vulcano</h2>
+          <p class="footer__text">
+            Ofrecemos soluciones digitales innovadoras para ayudar a tu negocio
+            a crecer y destacar en el mercado actual.
+          </p>
+        </div>
+
+        <div class="footer__links">
+          <h3 class="footer__heading">Enlaces rápidos</h3>
+          <ul class="footer__nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../pages/acerca.html">Acerca de</a></li>
+            <li><a href="../pages/contactenos.html">Contáctenos</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/multimedia.html">Multimedia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h3 class="footer__heading">Contacto</h3>
+          <address>
+            <p>Calle Principal 123</p>
+            <p>Medellin, Colombia</p>
+            <p>Email: info@misitio.com</p>
+            <p>Teléfono: (123) 456-7890</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2025 Vulcano. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

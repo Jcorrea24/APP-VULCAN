@@ -12,6 +12,18 @@
   /*Verde oliva amarillento*/
   --color-claro: #edbb99;
 
+<<<<<<< HEAD
+
+    /* Variaciones de colores */
+    --color-primary-light: #F89AAE;
+    --color-primary-dark: #C84E67;
+    --color-secondary-light: #8EF0F8;
+    --color-secondary-dark: #2EB4C1;
+    --color-accent-light: #F8DD5C;
+    --color-accent-dark: #C4A206;
+    --color-dark-light: #E98571;
+    --color-light-dark: #5A6118;
+=======
   /* Variaciones de colores */
   --color-primary-light: #f89aae;
   --color-primary-dark: #c84e67;
@@ -21,6 +33,7 @@
   --color-accent-dark: #c4a206;
   --color-dark-light: #e98571;
   --color-light-dark: #5a6118;
+>>>>>>> 82de13b62f78a5b6b9750518690667899cf3b667
 
   /* 🖋️ Colores de texto */
   --text-primary: #ffffff;
@@ -147,10 +160,18 @@ header {
 }
 
 .header__navbar__nav_item a:hover {
+<<<<<<< HEAD
+    padding: 10px;
+    border: 1px, solid rgb(241, 233, 233);
+    border-radius: 10px;
+    background-color: rgb(133, 79, 116);
+
+=======
   padding: 10px;
   border: 1px, solid black;
   border-radius: 10px;
   background-color: rgb(133, 79, 116);
+>>>>>>> 82de13b62f78a5b6b9750518690667899cf3b667
 }
 
 .header__navbar__nav .login {

@@ -1,0 +1,130 @@
+body{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bloque: login-form */
+.login-form {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; /* Para que padding no afecte el width total */
+}
+
+/* Elemento: login-form__title */
+.login-form__title {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Elemento: login-form__form (opcional, si necesitas estilizar el form tag directamente) */
+.login-form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Elemento: login-form__group */
+.login-form__group {
+    margin-bottom: 20px;
+}
+
+/* Modificador: login-form__group--options */
+.login-form__group--options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Elemento: login-form__label */
+.login-form__label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Elemento: login-form__input */
+.login-form__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para que padding no afecte el width total */
+    font-size: 16px;
+}
+
+.login-form__input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Elemento: login-form__checkbox-label (para el label del checkbox) */
+.login-form__checkbox-label {
+    display: flex;
+    align-items: center;
+    color: #555;
+    cursor: pointer;
+}
+
+/* Elemento: login-form__checkbox */
+.login-form__checkbox {
+    margin-right: 8px;
+}
+
+/* Elemento: login-form__link */
+.login-form__link {
+    color: #1e1e1f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-form__link:hover {
+    text-decoration: underline;
+}
+
+/* Elemento: login-form__button */
+.login-form__button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+}
+
+/* Modificador: login-form__button--primary */
+.login-form__button--primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.login-form__button--primary:hover {
+    background-color: #0056b3;
+}
+
+/* Elemento: login-form__text (para el texto de "¿No tienes cuenta?") */
+.login-form__text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
