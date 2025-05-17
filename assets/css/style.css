@@ -148,18 +148,10 @@ header {
 }
 
 .header__navbar__nav_item a:hover {
-<<<<<<< HEAD
     padding: 10px;
     border: 1px, solid rgb(241, 233, 233);
     border-radius: 10px;
     background-color: rgb(133, 79, 116);
-
-=======
-  padding: 10px;
-  border: 1px, solid black;
-  border-radius: 10px;
-  background-color: rgb(133, 79, 116);
->>>>>>> 82de13b62f78a5b6b9750518690667899cf3b667
 }
 
 .header__navbar__nav .login {
@@ -293,61 +285,6 @@ header {
     background-color: rgb(133, 111, 79);
     color: black;
   }
-
-  /*
-    .header__logo {
-        width: 80px;
-    }
-
-    .div__navbar {
-        padding: var(--spacing-md);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style: none;
-        width: 60%;
-    }
-
-    .div__navbar__item a {
-        margin: var(--spacing-xs);
-        text-decoration: none;
-        font-family: var(--font-family-heading);
-        font-size: var(--font-size-md);
-        color: var(--text-primary);
-    }
-
-    .div__navbar__item a:hover {
-        padding: 10px;
-        border: 1px, solid black;
-        border-radius: 10px;
-        background-color: rgb(133, 79, 116);
-
-    }
-
-    .header__nav {
-        padding: var(--spacing-md);
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        list-style: none;
-        width: 25%;
-    }
-
-    .header__nav__item a {
-        margin: var(--spacing-xs);
-        text-decoration: none;
-        font-family: var(--font-family-heading);
-        font-size: var(--font-size-md);
-        color: var(--text-primary);
-    }
-
-    .login {
-        border: 1px, solid, black;
-        padding: 10px;
-        border-radius: 10px;
-        background-color: rgb(146, 95, 65);
-    }
-    */
 
   /* Base Footer Styles */
   .footer {

@@ -199,34 +199,8 @@ body {
     font-style: italic;
     color: #555; /* Un poco más tenue para anónimo */
 }
-.comment-item--anonymous .comment-item__avatar {
-    /* Podrías usar un avatar genérico diferente si quisieras */
-    /* filter: grayscale(1); */
-}
 .comment-item--anonymous {
     border-left-color: #6c757d; /* Color diferente para anónimo */
-}
-
-/* --- Responsive (ejemplo básico) --- */
-@media (max-width: 600px) {
-    .feedback-section__title {
-        font-size: 1.8em;
-    }
-    .comment-form__title, .comments-list__title {
-        font-size: 1.3em;
-    }
-    .comment-item__header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .comment-item__avatar {
-        margin-bottom: 8px;
-    }
-    .comment-item__timestamp {
-        margin-left: 0; /* Quitar margen si estaba al lado del autor */
-        margin-top: 4px;
-    }
->>>>>>> e3c6b2807bfad69205a389d4e2e83089b5184f68
 }
 
 .container {
@@ -399,4 +373,26 @@ textarea:focus {
     .star-rating label {
         font-size: 1.5rem;
     }
+}
+
+/* --- Responsive (ejemplo básico) --- */
+@media (max-width: 600px) {
+     .feedback-section__title {
+        font-size: 1.8em;
+    }
+    .comment-form__title, .comments-list__title {
+        font-size: 1.3em;
+    }
+    .comment-item__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comment-item__avatar {
+        margin-bottom: 8px;
+    }
+    .comment-item__timestamp {
+        margin-left: 0; /* Quitar margen si estaba al lado del autor */
+        margin-top: 4px;
+    }
+   
 }
