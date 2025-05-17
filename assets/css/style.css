@@ -12,7 +12,6 @@
   /*Verde oliva amarillento*/
   --color-claro: #edbb99;
 
-<<<<<<< HEAD
 
     /* Variaciones de colores */
     --color-primary-light: #F89AAE;
@@ -23,17 +22,6 @@
     --color-accent-dark: #C4A206;
     --color-dark-light: #E98571;
     --color-light-dark: #5A6118;
-=======
-  /* Variaciones de colores */
-  --color-primary-light: #f89aae;
-  --color-primary-dark: #c84e67;
-  --color-secondary-light: #8ef0f8;
-  --color-secondary-dark: #2eb4c1;
-  --color-accent-light: #f8dd5c;
-  --color-accent-dark: #c4a206;
-  --color-dark-light: #e98571;
-  --color-light-dark: #5a6118;
->>>>>>> 82de13b62f78a5b6b9750518690667899cf3b667
 
   /* 🖋️ Colores de texto */
   --text-primary: #ffffff;
