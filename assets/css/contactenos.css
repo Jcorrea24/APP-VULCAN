@@ -1,5 +1,228 @@
-body{
-    display: grid;
-    min-height: 100dvh;
-    grid-template-rows: auto 1fr auto;
+/* Reset básico y fuentes */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* --- Bloque: feedback-section --- */
+.feedback-section {
+    padding: 20px;
+}
+
+.feedback-section__title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.feedback-section__intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* --- Bloque: comment-form --- */
+.comment-form {
+    background-color: #eef3f7;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 1px solid #d1dce5;
+}
+
+.comment-form__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #34495e;
+    font-size: 1.5em;
+}
+
+.comment-form__group {
+    margin-bottom: 20px;
+}
+
+.comment-form__label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #34495e;
+}
+
+.comment-form__textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Importante para que padding no aumente el width */
+    font-size: 1em;
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+.comment-form__textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.comment-form__privacy-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form__option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95em;
+    color: #495057;
+}
+
+.comment-form__radio {
+    margin-right: 8px;
+    accent-color: #007bff; /* Estiliza el color del check del radio */
+}
+
+.comment-form__actions {
+    text-align: right;
+}
+
+/* --- Botones (componente reutilizable) --- */
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.button--primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.button--primary:hover {
+    background-color: #0056b3;
+}
+.button--primary:active {
+    transform: translateY(1px);
+}
+
+
+/* --- Bloque: comments-list --- */
+.comments-list {
+    margin-top: 30px;
+}
+
+.comments-list__title {
+    color: #34495e;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+
+.comments-list__empty-message {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+/* --- Bloque: comment-item --- */
+.comment-item {
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    border-left: 4px solid #007bff; /* Acennto visual */
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.comment-item__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+}
+
+.comment-item__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+}
+
+.comment-item__author {
+    margin: 0;
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.comment-item__timestamp {
+    font-size: 0.85em;
+    color: #777;
+}
+
+.comment-item__text {
+    margin: 0;
+    color: #454545;
+    line-height: 1.7;
+}
+
+/* Modificador para comentarios anónimos */
+.comment-item--anonymous .comment-item__author {
+    font-style: italic;
+    color: #555; /* Un poco más tenue para anónimo */
+}
+.comment-item--anonymous .comment-item__avatar {
+    /* Podrías usar un avatar genérico diferente si quisieras */
+    /* filter: grayscale(1); */
+}
+.comment-item--anonymous {
+    border-left-color: #6c757d; /* Color diferente para anónimo */
+}
+
+/* --- Responsive (ejemplo básico) --- */
+@media (max-width: 600px) {
+    .feedback-section__title {
+        font-size: 1.8em;
+    }
+    .comment-form__title, .comments-list__title {
+        font-size: 1.3em;
+    }
+    .comment-item__header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .comment-item__avatar {
+        margin-bottom: 8px;
+    }
+    .comment-item__timestamp {
+        margin-left: 0; /* Quitar margen si estaba al lado del autor */
+        margin-top: 4px;
+    }
 }
