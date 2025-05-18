@@ -1,5 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
+   
 
 }
 h1{
@@ -22,8 +23,9 @@ h1{
 
     .descripcion{
         text-align: center;
-        font-size: 1.5rem;
-        color: black;
+         font-family: var(  --font-family-base):
+        font-size: var(--font-size-lg);
+        color: var(--text-medium);
         padding: 1rem;
     }
 

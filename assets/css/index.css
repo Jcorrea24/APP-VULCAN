@@ -1,3 +1,8 @@
+.body{
+    color: var(--text-medium);
+    font-family: var(--font-family-base) !important;
+   
+}
 .slider-frame {
     width: 100%;
     /* El ancho será el 100% de la ventana */
@@ -161,6 +166,7 @@
 }
 
 .card__title {
+    font-family: var(--font-family-base);
     font-size: var(--font-size-lg);
     margin-bottom: var(--spacing-sm);
     color: var(--text-dark);
@@ -168,6 +174,7 @@
 
 .card__description {
     font-size: var(--font-size-md);
+    font-family: var(--font-family-base);
     color: var(--text-medium);
     margin-bottom: var(--spacing-md);
     line-height: 1.6;
