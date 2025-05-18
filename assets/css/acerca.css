@@ -142,6 +142,7 @@ main {
 
 .value__text {
   color: var(--text-medium);
+  font-family: arial;
 }
 /* Media Queries */
 @media (max-width: 768px) {
