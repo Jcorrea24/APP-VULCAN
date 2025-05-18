@@ -141,6 +141,7 @@ main {
 }
 
 .value__text {
+  font-size: var(--font-size-lg);
   color: var(--text-medium);
 }
 /* Media Queries */
