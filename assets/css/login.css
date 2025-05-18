@@ -118,7 +118,7 @@ body{
 }
 
 .login-form__button--primary:hover {
-    background-color: #0056b3;
+    background-color: var(--color-primary-dark);
 }
 
 /* Elemento: login-form__text (para el texto de "¿No tienes cuenta?") */

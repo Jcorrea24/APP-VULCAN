@@ -112,7 +112,7 @@ body{
 }
 
 .registration-form__submit-button:hover {
-    background-color: #0056b3; /* Un azul un poco más oscuro */
+    background-color: var(--color-primary-dark); /* Un azul un poco más oscuro */
 }
 
 .registration-form__submit-button:disabled {
