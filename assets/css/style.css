@@ -151,7 +151,7 @@ header {
     padding: 10px;
     border: 1px, solid rgb(241, 233, 233);
     border-radius: 10px;
-    background-color: rgb(133, 79, 116);
+    background-color: rgb(133, 116, 79);
 }
 
 .header__navbar__nav .login {

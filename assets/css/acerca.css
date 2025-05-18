@@ -4,9 +4,18 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 main {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 }
+.titulo{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
 .about {
+  display: flex;
   padding: var(--spacing-xxl) 0;
 }
 
@@ -52,11 +61,15 @@ main {
 
 /* Mission Section */
 .mission {
+  display: flex;
+  flex-direction: row;
   padding: var(--spacing-xxl) 0;
   background-color: var(--color-claro);
 }
 
 .mission__container {
+  display: flex;
+  flex-direction: column;
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 var(--container-padding);
@@ -93,6 +106,8 @@ main {
 
 /* Values Section */
 .values {
+  display: flex;
+  flex-wrap: wrap;
   padding: var(--spacing-xxl) 0;
 }
 
