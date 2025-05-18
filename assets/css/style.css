@@ -58,8 +58,8 @@
   /* 48px */
 
   /* Fuentes */
-  --font-family-base: "Arial", "Helvetica", sans-serif;
-  --font-family-heading: "Arial", "Helvetica", sans-serif;
+  --font-family-base: "times new roman", "Arial", sans-serif;
+  --font-family-heading: "times new roman", "Arial", sans-serif;
 
   /* Tamaños de fuente */
   --font-size-xs: 0.75rem;

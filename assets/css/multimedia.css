@@ -23,7 +23,7 @@ h1{
 
     .descripcion{
         text-align: center;
-         font-family: var(  --font-family-base):
+        font-family: var(  --font-family-base);
         font-size: var(--font-size-lg);
         color: var(--text-medium);
         padding: 1rem;
