@@ -128,3 +128,12 @@
     font-size: 14px;
     color: #555;
 }
+
+@media screen and (min-width: 1200px) {
+        *body{
+        display: grid;
+        min-height: 100dvh;
+        grid-template-rows: auto 1fr auto;
+    }
+
+}
