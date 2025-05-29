@@ -116,8 +116,8 @@
 }
 
 
-@media screen and (max-width: 900px) {
-        *body{
+@media (max-width: 900px) {
+        body{
         display: grid;
         min-height: 100dvh;
         grid-template-rows: auto 1fr auto;

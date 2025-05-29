@@ -129,11 +129,14 @@
     color: #555;
 }
 
-@media screen and (max-width: 900px) {
-        *body{
-        display: grid;
-        min-height: 100dvh;
-        grid-template-rows: auto 1fr auto;
+@media (max-width: 900px) {
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: 100vh;
     }
 
 }
