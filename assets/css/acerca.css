@@ -45,7 +45,7 @@ main {
 
 .about__image {
   flex: 1;
-  min-width: 300px;
+  min-width: 200px;
 }
 
 .about__image-placeholder {
