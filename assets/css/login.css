@@ -129,7 +129,7 @@
     color: #555;
 }
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
     body{
         display: flex;
         flex-wrap: wrap;

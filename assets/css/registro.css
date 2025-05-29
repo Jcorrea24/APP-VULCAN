@@ -116,7 +116,7 @@
 }
 
 
-@media (max-width: 900px) {
+@media (min-width: 900px) {
         body{
         display: grid;
         min-height: 100dvh;
