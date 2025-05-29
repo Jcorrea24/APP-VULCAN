@@ -59,6 +59,10 @@ main {
   font-weight: bold;
 }
 
+.about__image-placeholder img{
+  width: 100%;
+}
+
 /* Mission Section */
 .mission {
   display: flex;
